@@ -28,6 +28,12 @@ module.exports = {
             options: {
               maxWidth: 800,
             },
+            resolve: `gatsby-remark-highlight-code`,
+            options: {
+              terminal: "carbon",
+              theme: "a11y-dark",
+              lineNumbers: true,
+            },
           },
         ],
       },
