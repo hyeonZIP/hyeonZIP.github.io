@@ -2,7 +2,7 @@
 title: ✒️ LG 유플러스 유레카 2기 합격 회고
 date: "2025-01-18T12:15:00.284Z"
 description: DESCRIPTION디스크립션
-thumbnail: ./images/lgeureka.png
+thumbnail: ../images/lgeureka.png
 tag: 부트캠프
 ---
 
@@ -64,7 +64,7 @@ tag: 부트캠프
 
 코테 발표는 **10시쯤**에 왔다.
 
-![](./images/2501182.png)
+![](../images/2501182.png)
 
 &nbsp;
 
@@ -80,7 +80,7 @@ tag: 부트캠프
 
 ## 최종 발표
 
-![](./images/2501183.png)
+![](../images/2501183.png)
 
 오전 10시부터 메일을 들여다보다가 지쳐서 꺼버릴때쯤 **15시**에 메일이 왔다.
 
