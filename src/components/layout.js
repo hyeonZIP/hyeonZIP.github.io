@@ -4,12 +4,13 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import "@fontsource/noto-sans-kr"
 import "@fontsource/noto-sans-kr/700.css";
+import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
 import "./layout.css"
 
 const Layout = ({ children }) => {
   // 초기 상태를 'light'로 설정
   const [theme, setTheme] = useState('light');
-
+  deckDeckGoHighlightElement();
   // 클라이언트에서만 실행되는 로직
   useEffect(() => {
     if (typeof window !== 'undefined') {
