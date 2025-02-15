@@ -19,26 +19,38 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `posts`,
+        name: `completed-posts`,
         path: `${__dirname}/content/posts/completed`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `non-complated-posts`,
+        path: `${__dirname}/content/posts`,
       },
     },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-remark-extract-image-attributes`,
           {
-            resolve: `gatsby-remark-images-insert-wrapper-attributes`,
-            options: {
-              setCssInWrapper: false,
-            },
             resolve: `gatsby-remark-images`,
             options: {
               linkImagesToOriginal: false,
               withWebp: true,
               quality: 80,
-              maxWidth: 800,
+              maxWidth: 1600,
             },
+          },
+          {
+            resolve: `gatsby-remark-images-insert-wrapper-attributes`,
+            options: {
+              setCssInWrapper: false,
+            },
+          },
+          {
             resolve: `gatsby-remark-highlight-code`,
             options: {
               terminal: "carbon",

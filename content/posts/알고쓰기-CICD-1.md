@@ -1,5 +1,5 @@
 ---
-title: "[알고 쓰기] #1 - CI/CD"
+title: "[알고 쓰기] #1 - CI/CD 이론"
 date: "2025-02-10T22:12:03.284Z"
 thumbnail: ./images/cicd0.png
 tag: CI/CD
