@@ -7,6 +7,8 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -14,18 +16,27 @@ module.exports = {
         path: `${__dirname}/content/posts/images`,
       },
     },
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `${__dirname}/content/posts/completed`,
+      },
+    },
     {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
           {
-            resolve: `gastby-remark-images-insert-wrapper-attributes`,
+            resolve: `gatsby-remark-images-insert-wrapper-attributes`,
             options: {
               setCssInWrapper: false,
             },
             resolve: `gatsby-remark-images`,
             options: {
+              linkImagesToOriginal: false,
+              withWebp: true,
+              quality: 80,
               maxWidth: 800,
             },
             resolve: `gatsby-remark-highlight-code`,
@@ -38,14 +49,8 @@ module.exports = {
         ],
       },
     },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `posts`,
-        path: `${__dirname}/content/posts/completed`,
-      },
-    },
-    `gatsby-transformer-sharp`,  
+
+      
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
