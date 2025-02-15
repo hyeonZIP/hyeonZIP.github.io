@@ -1,6 +1,10 @@
+/*
+  한글 검색 목록
+  1. 태그
+*/
+
 :root {
   --border-radius: 4px;
-  --color-text: #333;
   --color-primary: #7026b9;
   --color-code-bg: #fff4db;
   --color-code: #8a6534;
@@ -98,7 +102,7 @@ img {
   border-style: none;
   max-width: 100%;
 }
-code,
+/* code, */
 kbd,
 pre,
 samp {
@@ -109,11 +113,11 @@ samp {
 hr {
   box-sizing: content-box;
   overflow: visible;
-  margin-left: 0;
-  margin-right: 0;
+
   margin-top: 30px;
+  margin-bottom: 30px;
   padding: 0;
-  margin-bottom: calc(var(--space-4) - 1px);
+  /* margin-bottom: calc(var(--space-4) - 1px); */
   border-top: none;
   border-left: none;
   border-right: none;
@@ -196,9 +200,9 @@ li > p {
 p {
   width: 100%;
 }
-code {
+/* code {
   font-size: 0.875rem;
-}
+} */
 kbd {
   font-size: 0.875rem;
 }
@@ -214,19 +218,17 @@ acronym {
   cursor: help;
 }
 tt,
-code {
+/* code {
   background-color: var(--color-code-bg);
   border-radius: var(--border-radius);
   color: var(--color-code);
   font-family: var(--font-mono);
   padding: 0.25em;
   word-break: normal;
-}
+} */
 pre code {
   background: none;
 }
-code:before,
-code:after,
 tt:before,
 tt:after {
   content: "\00a0";
@@ -267,20 +269,34 @@ pre tt:after {
   font-size: 16px;
   line-height: 30px;
 }
+
+/*태그*******************************************/
 .tag{
+  color: var(--color-text);
   background-color: var(--color-tag-background);
   border-radius: 50px;
   font-size: 15px;
-  padding: 8px 10px;
+  padding: 5px 10px;
   margin-right: 7px;
-  margin-bottom: 20px;
+  margin-top: 10px;
+  display: inline-block;
+  font-weight: bold;
   cursor: pointer;
 }
+.tag-header{
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
 .selected{
   background-color: var(--color-text);
   color: var(--color-background);
 }
 
-.thumnail{
-  /* margin-bottom: 50px; */
+/**********************************************/
+
+.verticalSpace{
+  height: 35px; 
+  display: block;
 }

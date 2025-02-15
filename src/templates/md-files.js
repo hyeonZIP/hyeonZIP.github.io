@@ -18,7 +18,7 @@ export default function Template({ data }) {
           <h2>{frontmatter.date}</h2>
           {console.log("test : " + frontmatter.tag)}
           {(frontmatter.tag != null) ? frontmatter.tag.split(",").map((tag) => (
-              <span className="tag"><Link to={`/tags?t=${encodeURIComponent(tag)}`}>{tag}</Link></span>
+              <span className="tag"><Link to={`/tag?tag=${encodeURIComponent(tag)}`}>{tag}</Link></span>
             )):""}
           <hr/>
           <div className="blog-html" dangerouslySetInnerHTML={{ __html: html }} />

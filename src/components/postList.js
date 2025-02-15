@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 
-const PostList = ({ posts, tag, series, search }) => {
+const PostList = ({ posts }) => {
   return (
     <div>
       {/* 존재하는 모든 포스트 반복 생성 */}
@@ -10,12 +10,13 @@ const PostList = ({ posts, tag, series, search }) => {
           <div key={node.id}>
             <Link className="i-title" to={node.fields.slug}>{node.frontmatter.title}</Link>
             <div className="i-date">{node.frontmatter.date}</div>
-            <p className="i-excerpt">{node.excerpt}</p>
-            {(node.frontmatter.tag != null) ? node.frontmatter.tag.split(",").map((tag) => (
-              <span className="tag" key={tag}>
-                <Link to={`/tags?tag=${encodeURIComponent(tag)}`}>{tag}</Link>
-              </span>
+            <div className="i-excerpt">{node.excerpt}</div>
+            {(node.frontmatter.tag != null) ? node.frontmatter.tag.split(",").map((tag, index) => (
+              <div className="tag" key={`${node.id}-${tag.trim()}-${index}`}>
+                <Link to={`/tag?tag=${encodeURIComponent(tag.trim())}`}>{tag.trim()}</Link>
+              </div>
             )) : ""}
+
             <hr />
           </div>
         );
