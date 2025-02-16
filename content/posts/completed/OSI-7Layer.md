@@ -3,7 +3,7 @@ title: OSI 7Layer
 date: "2025-02-03T22:13:04.284Z"
 thumbnail:
 tag: OSI 7계층
-series: cs
+series: CS
 ---
 
 # 그래서 OSI 모델이 왜 중요한데?
