@@ -271,7 +271,7 @@ pre tt:after {
   color: var(--color-background);
 }
 
-/***********마크다운***************************/
+/*마크다운***************************/
 p {
   padding-top: 20px;
   padding-bottom: 20px;

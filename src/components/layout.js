@@ -40,6 +40,9 @@ const Layout = ({ children }) => {
     });
   }, []);
 
+  
+  
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -52,7 +55,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} theme={theme} toggleTheme={toggleTheme} />
+      <Header siteTitle={data.site.siteMetadata?.title || `Title`} theme={theme} toggleTheme={toggleTheme}/>
       <div
         style={{
           margin: `0 auto`,
