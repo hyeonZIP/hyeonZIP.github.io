@@ -15,7 +15,9 @@ const Header = ({ siteTitle, theme, toggleTheme }) => {
   <header
     style={{
       margin: `0 auto`,
-      padding: `var(--space-3) var(--size-gutter)`,
+      paddingLeft: `80px`,
+      paddingRight: '80px',
+      height: '75px',
       display: `flex`,
       alignItems: `center`,
       justifyContent: `space-between`,

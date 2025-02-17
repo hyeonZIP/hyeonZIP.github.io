@@ -6,8 +6,8 @@ import Seo from "../components/seo"
 
 const SecondPage = () => (
   <Layout>
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
+    <h1>PS PAGE </h1>
+    <p>일반 게시글과 PS용 글을 분리하기 위함</p>
     <Link to="/">Go back to the homepage</Link>
   </Layout>
 )
