@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import {useLocation} from "@reach/router"
 import MoonIcon from "./icons/MoonIcon"
 import SunIcon from "./icons/SunIcon"
+import TagIcon from "./icons/TagIcon"
 
 const Header = ({ siteTitle, theme, toggleTheme }) => {
   
@@ -22,22 +23,19 @@ const Header = ({ siteTitle, theme, toggleTheme }) => {
       boxShadow: `1px 0.1px 5px 3px #303030`,
     }}
   >
-    <Link
-      to="/"
-      style={{
-        fontSize: `20px`,
-        textDecoration: `none`
-      }}
-    >
+    <Link to="/" style={{fontSize: `20px`, textDecoration: `none`}}>
       {siteTitle}'s blog
     </Link>
     <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
         <div onClick={toggleTheme} style={{ cursor: 'pointer', }}>
           {theme === 'dark' ? (
-            <SunIcon/>
+            <Link><SunIcon/></Link>
           ) : (
-            <MoonIcon/>
+            <Link><MoonIcon/></Link>
           )}
+        </div>
+        <div style={{cursor: 'pointer'}}>
+          <Link to="/tag"><TagIcon/></Link>
         </div>
     </div>
   </header>

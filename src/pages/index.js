@@ -16,7 +16,7 @@ export default ({ data }) => {
           <div><GatsbyImage image={profileImg} alt="profileImage"/></div>
           <div>
             <div className="p-name">@hyeonZIP</div>
-            <div className="p-intro">#Only Chill Develop</div>
+            <div className="p-intro">#Chill Develop</div>
             <div> [아이콘 구역]</div>
           </div>
         </div>

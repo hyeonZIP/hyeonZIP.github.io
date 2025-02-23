@@ -26,6 +26,7 @@
   --size-gap: var(--space-6);
   --font-mono: "Noto Sans KR", sans-serif;
 }
+
 :root[color-theme='light'] {
   --color-background: #d6d6d6;
   --color-text: #191919;
@@ -34,10 +35,11 @@
 }
 
 :root[color-theme='dark'] {
-  --color-background: #1d1b1b;
+  --color-background: #232631;
   --color-title: #fff;
   --color-text: #b0b0b0;
   --color-tag-background: #413d3d;
+  --color-tag: #EC008B;
   --color-precode-background: hsla(0, 0%, 0%, 0.04);
 }
 html {
