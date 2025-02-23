@@ -1,8 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import {useLocation} from "@reach/router"
-import PSIcon from "./icons/PSIcon"
-import BlogIcon from "./icons/BlogIcon"
 import MoonIcon from "./icons/MoonIcon"
 import SunIcon from "./icons/SunIcon"
 
@@ -34,15 +32,6 @@ const Header = ({ siteTitle, theme, toggleTheme }) => {
       {siteTitle}'s blog
     </Link>
     <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-      <div transform="translateY(2px)">
-      <Link to={isMainPage ? "/ps" : "/"}>
-        {isMainPage ? (
-            <PSIcon/>
-        ) : (
-            <BlogIcon/>
-        )}
-      </Link>
-      </div>
         <div onClick={toggleTheme} style={{ cursor: 'pointer', }}>
           {theme === 'dark' ? (
             <SunIcon/>
