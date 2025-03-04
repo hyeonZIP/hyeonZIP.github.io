@@ -38,23 +38,28 @@ export const query = graphql`
         }
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      totalCount
-      edges {
-        node {
-          id
-          frontmatter {
-            title
-            date(formatString: "MMMM DD, YYYY")
-            tag
-            series
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: {published: {ne: false}}} 
+      ) 
+      {
+        totalCount
+        edges {
+          node {
+            id
+            frontmatter {
+              title
+              date(formatString: "MMMM DD, YYYY")
+              tag
+              series
+              published
+            }
+            fields{
+              slug
+            }
+            excerpt(truncate: true, pruneLength: 223)          
           }
-          fields{
-            slug
-          }
-          excerpt(truncate: true, pruneLength: 223)          
         }
       }
-    }
   }
 `

@@ -1,13 +1,12 @@
 /*
   한글 검색 목록
   1. 태그
+  2. 마크다운
 */
 
 :root {
   --border-radius: 4px;
   --color-primary: #7026b9;
-  --color-code-bg: #fff4db;
-  --color-code: #8a6534;
   --font-lg: 18px;
   --font-md: 16px;
   --font-sm: 14px;
@@ -21,7 +20,7 @@
   --space-4: 24px;
   --space-5: 32px;
   --space-6: 64px;
-  --size-content: 54rem;
+  --size-content: 60rem;
   --size-gutter: var(--space-5);
   --size-gap: var(--space-6);
   --font-mono: "Noto Sans KR", sans-serif;
@@ -31,7 +30,6 @@
   --color-background: #d6d6d6;
   --color-text: #191919;
   --color-tag-background: #d4d4d4;
-  --color-precode-background: hsla(0, 0%, 0%, 0.04);
 }
 
 :root[color-theme='dark'] {
@@ -40,7 +38,6 @@
   --color-text: #b0b0b0;
   --color-tag-background: #413d3d;
   --color-tag: #EC008B;
-  --color-precode-background: hsla(0, 0%, 0%, 0.04);
 }
 html {
   -webkit-text-size-adjust: 100%;
@@ -94,7 +91,6 @@ img {
   border-style: none;
   max-width: 100%;
 }
-/* code, */
 kbd,
 pre,
 samp {
@@ -185,11 +181,6 @@ li *:last-child {
   margin-bottom: 0;
 }
 
-
-
-/* code {
-  font-size: 0.875rem;
-} */
 kbd {
   font-size: 0.875rem;
 }
@@ -205,16 +196,11 @@ acronym {
   cursor: help;
 }
 
-pre code {
-  background: none;
-}
 tt:before,
 tt:after {
   content: "\00a0";
   letter-spacing: -0.2em;
 }
-pre code:before,
-pre code:after,
 pre tt:before,
 pre tt:after {
   content: none;
@@ -275,8 +261,8 @@ pre tt:after {
 
 /*마크다운***************************/
 p {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   margin-top: 2px;
   margin-bottom: 2px;
   width: 100%;
@@ -293,5 +279,11 @@ h1 {
 .verticalSpace{
   height: 35px; 
   display: block;
+}
+
+code {
+  background-color: hsla(123, 100%, 50%, 0.252);
+  padding: 2px 5px 2px 5px;
+  border-radius: 10px;
 }
 
