@@ -30,6 +30,9 @@
   --color-background: #e2e2e2;
   --color-text: #191919;
   --color-tag-background: #d4d4d4;
+  --color-theme: #C00C3F;
+  --color-theme-hover: #EC656A;
+
 }
 
 :root[color-theme='dark'] {
@@ -37,7 +40,14 @@
   --color-title: #fff;
   --color-text: #b0b0b0;
   --color-tag-background: #555570;
-  --color-tag: #EC008B;
+  --color-theme: #EC008B;
+  --color-theme-hover: #F8A745;
+}
+.theme {
+  color: var(--color-theme);
+}
+.theme:hover {
+  color: var(--color-theme-hover);
 }
 html {
   -webkit-text-size-adjust: 100%;

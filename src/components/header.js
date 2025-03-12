@@ -24,7 +24,7 @@ const Header = ({ siteTitle, theme, toggleTheme }) => {
       // background: `#002A2E`,
     }}
   >
-    <Link to="/" style={{fontSize: `20px`, textDecoration: `none`}}>
+    <Link to="/" className="theme">
       {siteTitle}'s blog
     </Link>
     <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>

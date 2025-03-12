@@ -1,5 +1,5 @@
 ---
-title: "트랜잭션 이해와 Spring"
+title: "📝트랜잭션 이해와 Spring"
 date: "2025-03-03T22:12:03.284Z"
 thumbnail: ./images/transaction.png
 tag: 트랜잭션,AOP,커넥션풀
