@@ -77,7 +77,10 @@ export const Head = () => <Seo title="Page two" />
 
 export const query = graphql`
   query {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+        allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: {published: {ne: false}}} 
+      )  {
       edges {
         node {
           id
@@ -93,7 +96,7 @@ export const query = graphql`
         }
       }
     }
-    allTags: allMarkdownRemark {
+    allTags: allMarkdownRemark(filter: { frontmatter: {published: {ne: false}}}) {
       group(field: frontmatter___tag) {
         fieldValue
         totalCount

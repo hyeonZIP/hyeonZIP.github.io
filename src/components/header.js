@@ -21,6 +21,7 @@ const Header = ({ siteTitle, theme, toggleTheme }) => {
       alignItems: `center`,
       justifyContent: `space-between`,
       boxShadow: `1px 0.1px 5px 3px #303030`,
+      // background: `#002A2E`,
     }}
   >
     <Link to="/" style={{fontSize: `20px`, textDecoration: `none`}}>
