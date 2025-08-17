@@ -266,15 +266,45 @@ section {
 }
 
 .about-content {
-    max-width: 800px;
+    max-width: 1000px;
     margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 2rem 0;
+}
+
+.about-image {
+    flex-shrink: 0;
+}
+
+.profile-photo {
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: white;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
+}
+
+.about-text {
+    flex: 1;
 }
 
 .about-text p {
     font-size: 1.1rem;
     margin-bottom: 2rem;
-    text-align: center;
     color: #4b5563;
+    line-height: 1.8;
 }
 
 .skills h3 {
@@ -628,6 +658,19 @@ section {
     .contact-item {
         flex-direction: column;
         text-align: center;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .profile-photo {
+        width: 200px;
+        height: 200px;
+        font-size: 3rem;
+        margin: 0 auto;
     }
 }
 

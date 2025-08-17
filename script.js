@@ -5,10 +5,12 @@ document.addEventListener('DOMContentLoaded', function() {
     const sidebarLinks = document.querySelectorAll('.sidebar-link');
     const mobileToggle = document.querySelector('.mobile-toggle');
 
-    // 모바일 메뉴 토글
-    mobileToggle.addEventListener('click', function() {
-        sidebar.classList.toggle('active');
-    });
+    // 모바일 메뉴 토글 (요소가 존재할 때만)
+    if (mobileToggle) {
+        mobileToggle.addEventListener('click', function() {
+            sidebar.classList.toggle('active');
+        });
+    }
 
     // 사이드바 링크 클릭 시 모바일 메뉴 닫기
     sidebarLinks.forEach(link => {
@@ -21,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // 외부 클릭 시 모바일 메뉴 닫기
     document.addEventListener('click', function(e) {
-        if (window.innerWidth <= 768) {
+        if (window.innerWidth <= 768 && mobileToggle) {
             if (!sidebar.contains(e.target) && !mobileToggle.contains(e.target)) {
                 sidebar.classList.remove('active');
             }
@@ -139,13 +141,18 @@ document.addEventListener('DOMContentLoaded', function() {
     const sections = document.querySelectorAll('section[id]');
     const sidebarLinksArray = Array.from(sidebarLinks);
 
-    window.addEventListener('scroll', () => {
-        let current = '';
+    const updateActiveSection = () => {
+        const scrollPosition = window.scrollY + 250; // 사이드바 높이와 여백 고려
+        let current = 'home';
+        
         sections.forEach(section => {
-            const sectionTop = section.offsetTop - 100;
-            const sectionHeight = section.clientHeight;
-            if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
-                current = section.getAttribute('id');
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+            const sectionBottom = sectionTop + sectionHeight;
+            const sectionId = section.getAttribute('id');
+            
+            if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+                current = sectionId;
             }
         });
 
@@ -155,7 +162,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 link.classList.add('active');
             }
         });
-    });
+    };
+
+    // 스크롤 이벤트 리스너
+    window.addEventListener('scroll', updateActiveSection);
+    
+    // 초기 로드 시 현재 섹션 설정
+    window.addEventListener('load', updateActiveSection);
+    setTimeout(updateActiveSection, 100);
 
     // 로딩 애니메이션
     window.addEventListener('load', function() {
@@ -235,14 +249,18 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // 사이드바 링크 호버 효과
+    // 사이드바 링크 호버 효과 (active 상태가 아닐 때만 적용)
     sidebarLinks.forEach(link => {
         link.addEventListener('mouseenter', function() {
-            this.style.transform = 'translateX(5px)';
+            if (!this.classList.contains('active')) {
+                this.style.transform = 'translateX(5px)';
+            }
         });
         
         link.addEventListener('mouseleave', function() {
-            this.style.transform = 'translateX(0)';
+            if (!this.classList.contains('active')) {
+                this.style.transform = 'translateX(0)';
+            }
         });
     });
 
@@ -264,6 +282,7 @@ document.addEventListener('DOMContentLoaded', function() {
             background: rgba(255, 255, 255, 0.1) !important;
             color: white !important;
             border-left-color: #fbbf24 !important;
+            transform: translateX(0) !important;
         }
         
         .sidebar-link {
