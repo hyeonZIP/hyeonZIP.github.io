@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오 - 개발자</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 좌측 사이드바 네비게이션 -->
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <div class="profile-info">
+                <div class="profile-avatar">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3>임재현</h3>
+                <p>Back-End Developer</p>
+            </div>
+        </div>
+        <ul class="sidebar-menu">
+            <li><a href="#home" class="sidebar-link active">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a></li>
+            <li><a href="#about" class="sidebar-link">
+                <i class="fas fa-user"></i>
+                <span>About me</span>
+            </a></li>
+            <li><a href="#experience" class="sidebar-link">
+                <i class="fas fa-briefcase"></i>
+                <span>Experience</span>
+            </a></li>
+            <li><a href="#projects" class="sidebar-link">
+                <i class="fas fa-code"></i>
+                <span>Projects</span>
+            </a></li>
+            <li><a href="#certificates" class="sidebar-link">
+                <i class="fas fa-certificate"></i>
+                <span>Certificates</span>
+            </a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <div class="social-links-sidebar">
+                <a href="#" class="social-link-sidebar"><i class="fab fa-github"></i></a>
+                <a href="#" class="social-link-sidebar"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-link-sidebar"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link-sidebar"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 메인 콘텐츠 영역 -->
+    <main class="main-content">
+        <!-- 홈 섹션 -->
+        <section id="home" class="hero">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">안녕하세요, 저는 <span class="highlight">개발자</span>입니다</h1>
+                    <p class="hero-subtitle">창의적인 솔루션으로 사용자 경험을 향상시키는 것을 좋아합니다</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">프로젝트 보기</a>
+                        <a href="#contact" class="btn btn-secondary">연락하기</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 소개 섹션 -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>안녕하세요! 저는 웹 개발에 열정을 가진 개발자입니다. 사용자 중심의 디자인과 효율적인 코드 작성을 중요하게 생각하며, 새로운 기술을 배우는 것을 즐깁니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 경험 섹션 -->
+        <section id="experience" class="experience">
+            <div class="container">
+                <h2 class="section-title">Work Experience</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>LG U+ 유레카 2기</h3>
+                                <span class="company">부트 캠프</span>
+                                <span class="period">25.01.20 - 25.08.12</span>
+                            </div>
+                            <p>교육생 인원들과 CS 스터디를 진행하였고, 총 3번의 프로젝트를 진행하면서 백엔드 팀장직을 맡았으며 최우수상을 수상하였습니다.</p>
+                            <ul>
+                                <li>백엔드 팀장으로서 2명의 백엔드 개발 팀원 관리</li>
+                                <li>Spring WebSocket을 활용한 채팅 서비스 개발</li>
+                                <li>Spring AI를 활용한 LLM 서비스 개발</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>(주)씨에이치소프트</h3>
+                                <span class="company">현장실습형 인턴</span>
+                                <span class="period">24.06.23 - 24.07.29</span>
+                            </div>
+                            <p>다양한 웹 프로젝트에 참여하며 실무 경험을 쌓았습니다. 사용자 피드백을 바탕으로 지속적인 개선을 진행했습니다.</p>
+                            <ul>
+                                <li>반응형 웹사이트 개발</li>
+                                <li>데이터베이스 설계 및 구현</li>
+                                <li>API 통합 및 최적화</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>경북 SW </h3>
+                                <span class="company">교내 활동</span>
+                                <span class="period">24.01.23 - 24.05.29</span>
+                            </div>
+                            <p>다양한 웹 프로젝트에 참여하며 실무 경험을 쌓았습니다. 사용자 피드백을 바탕으로 지속적인 개선을 진행했습니다.</p>
+                            <ul>
+                                <li>반응형 웹사이트 개발</li>
+                                <li>데이터베이스 설계 및 구현</li>
+                                <li>API 통합 및 최적화</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>(주)테이큰소프트</h3>
+                                <span class="company">현장실습형 인턴</span>
+                                <span class="period">23.12.26 - 24.02.16</span>
+                            </div>
+                            <p>팀 리드로서 프로젝트 관리 및 개발을 담당했습니다. React와 Node.js를 활용한 웹 애플리케이션 개발 경험이 있습니다.</p>
+                            <ul>
+                                <li>팀 리드로서 5명의 개발자 관리</li>
+                                <li>React 기반 프론트엔드 개발</li>
+                                <li>Node.js 백엔드 API 개발</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>(주)엠엔비전</h3>
+                                <span class="company">근로 장학</span>
+                                <span class="period">2020 - 2022</span>
+                            </div>
+                            <p>다양한 웹 프로젝트에 참여하며 실무 경험을 쌓았습니다. 사용자 피드백을 바탕으로 지속적인 개선을 진행했습니다.</p>
+                            <ul>
+                                <li>반응형 웹사이트 개발</li>
+                                <li>데이터베이스 설계 및 구현</li>
+                                <li>API 통합 및 최적화</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 프로젝트 섹션 -->
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>E-commerce Platform</h3>
+                            <p>React와 Node.js를 활용한 온라인 쇼핑몰 플랫폼입니다. 결제 시스템과 관리자 대시보드를 포함합니다.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Task Management App</h3>
+                            <p>팀 협업을 위한 태스크 관리 애플리케이션입니다. 실시간 업데이트와 알림 기능을 제공합니다.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">Firebase</span>
+                                <span class="tech-tag">Socket.io</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-content">
+                            <h3>Data Visualization Dashboard</h3>
+                            <p>대용량 데이터를 시각화하는 대시보드입니다. D3.js를 활용한 인터랙티브 차트를 제공합니다.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">D3.js</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Flask</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 자격증 섹션 -->
+        <section id="certificates" class="certificates">
+            <div class="container">
+                <h2 class="section-title">Certificates</h2>
+                <div class="certificates-grid">
+                    <div class="certificate-card">
+                        <div class="certificate-content">
+                            <h3>정보처리기사</h3>
+                            <p>정보처리기사</p>
+                            <span class="certificate-date">2025.06.12</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 연락처 섹션 -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>developer@example.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <p>+82 10-1234-5678</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h3>Location</h3>
+                                <p>서울특별시, 대한민국</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 푸터 -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2024 Portfolio. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html> 
