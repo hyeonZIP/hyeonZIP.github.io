@@ -67,24 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(el);
     });
 
-    // 타이핑 애니메이션 (홈 섹션 제목)
-    const heroTitle = document.querySelector('.hero-title');
-    if (heroTitle) {
-        const text = heroTitle.textContent;
-        heroTitle.textContent = '';
-        
-        let i = 0;
-        const typeWriter = () => {
-            if (i < text.length) {
-                heroTitle.textContent += text.charAt(i);
-                i++;
-                setTimeout(typeWriter, 100);
-            }
-        };
-        
-        // 페이지 로드 후 타이핑 시작
-        setTimeout(typeWriter, 500);
-    }
+
 
     // 스킬 태그 애니메이션
     const skillTags = document.querySelectorAll('.skill-tag');
@@ -143,7 +126,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const updateActiveSection = () => {
         const scrollPosition = window.scrollY + 250; // 사이드바 높이와 여백 고려
-        let current = 'home';
+        let current = 'about';
         
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
