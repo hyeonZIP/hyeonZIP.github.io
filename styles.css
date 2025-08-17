@@ -323,6 +323,66 @@ section {
     line-height: 1.8;
 }
 
+.highlight-keyword {
+    background: rgba(102, 126, 234, 0.1);
+    color: #667eea;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 500;
+    border: 1px solid rgba(102, 126, 234, 0.2);
+    line-height: 1.2;
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.warning-keyword {
+    background: rgba(239, 68, 68, 0.1);
+    color: #ef4444;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 500;
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    line-height: 1.2;
+    display: inline-block;
+    vertical-align: baseline;
+}
+
+.warning-keyword-link {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    transition: all 0.3s ease;
+    line-height: 1;
+}
+
+.warning-keyword-link:hover {
+    transform: translateY(-1px);
+}
+
+.warning-keyword-link i {
+    font-size: 0.8rem;
+    color: #ef4444;
+    opacity: 0.8;
+    line-height: 1;
+}
+
+.warning-keyword-link:hover i {
+    opacity: 1;
+}
+
+.link-keyword {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px solid #2563eb;
+    transition: color 0.3s ease;
+}
+
+.link-keyword:hover {
+    color: #1d4ed8;
+}
+
 .skills h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
