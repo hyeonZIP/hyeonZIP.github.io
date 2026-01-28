@@ -1,265 +1,344 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - 임재현</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- 좌측 사이드바 네비게이션 -->
     <nav class="sidebar">
-        <div class="sidebar-header">
-            <div class="profile-info">
-                <div class="profile-avatar">
-                    <img src="images/sidebar-profile.jpg" alt="Profile Photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                    <i class="fas fa-user" style="display: none;"></i>
-                </div>
-                <h3>임재현</h3>
-                <p>Back-End Developer</p>
-            </div>
+      <div class="sidebar-header">
+        <div class="profile-info">
+          <div class="profile-avatar">
+            <img
+              src="images/sidebar-profile.jpg"
+              alt="Profile Photo"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <i class="fas fa-user" style="display: none"></i>
+          </div>
+          <h3>임재현</h3>
+          <p>Back-End Developer</p>
         </div>
-        <ul class="sidebar-menu">
-            <li><a href="#about" class="sidebar-link active">
-                <i class="fas fa-user"></i>
-                <span>About me</span>
-            </a></li>
-            <li><a href="#experience" class="sidebar-link">
-                <i class="fas fa-briefcase"></i>
-                <span>Experience</span>
-            </a></li>
-            <li><a href="#projects" class="sidebar-link">
-                <i class="fas fa-code"></i>
-                <span>Projects</span>
-            </a></li>
-            <li><a href="#certificates" class="sidebar-link">
-                <i class="fas fa-certificate"></i>
-                <span>Certificates</span>
-            </a></li>
-        </ul>
-                 <div class="sidebar-footer">
-             <div class="social-links-sidebar">
-                 <a href="https://github.com/hyeonZIP" class="social-link-sidebar"><i class="fab fa-github"></i></a>
-                 <a href="https://until.blog/@hyeonzip" class="social-link-sidebar"><i class="fas fa-blog"></i></a>
-             </div>
-         </div>
+      </div>
+      <ul class="sidebar-menu">
+        <li>
+          <a href="#about" class="sidebar-link active">
+            <i class="fas fa-user"></i>
+            <span>About me</span>
+          </a>
+        </li>
+        <li>
+          <a href="#experience" class="sidebar-link">
+            <i class="fas fa-briefcase"></i>
+            <span>Experience</span>
+          </a>
+        </li>
+        <li>
+          <a href="#projects" class="sidebar-link">
+            <i class="fas fa-code"></i>
+            <span>Projects</span>
+          </a>
+        </li>
+        <li>
+          <a href="#certificates" class="sidebar-link">
+            <i class="fas fa-certificate"></i>
+            <span>Certificates</span>
+          </a>
+        </li>
+      </ul>
+      <div class="sidebar-footer">
+        <div class="social-links-sidebar">
+          <a href="https://github.com/hyeonZIP" class="social-link-sidebar"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a href="https://until.blog/@hyeonzip" class="social-link-sidebar"
+            ><i class="fas fa-blog"></i
+          ></a>
+        </div>
+      </div>
     </nav>
 
     <!-- 메인 콘텐츠 영역 -->
     <main class="main-content">
+      <!-- 소개 섹션 -->
+      <section id="about" class="about">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-content">
+            <div class="about-image">
+              <div class="profile-photo">
+                <img
+                  src="images/main-profile.jpg"
+                  alt="Profile Photo"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                />
+                <i class="fas fa-user" style="display: none"></i>
+              </div>
+            </div>
+            <div class="about-text">
+              <p>
+                안녕하세요, 백엔드 개발자 임재현(hyeonZIP) 입니다. 확장 가능한
+                설계와 동작하는 클린 코드를 위해 고민합니다.
+                <a
+                  href="https://workingscorpion.notion.site/18ba87a296d880449599f97af1ca1845"
+                  target="_blank"
+                  class="warning-keyword-link"
+                  ><span class="warning-keyword">기술 쇼핑</span
+                  ><i class="fas fa-external-link-alt"></i></a
+                >을 경계하기 위해 기술 선택에 항상 근거를 가지려고 노력합니다.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-
-        <!-- 소개 섹션 -->
-        <section id="about" class="about">
-            <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <div class="about-content">
-                    <div class="about-image">
-                        <div class="profile-photo">
-                            <img src="images/main-profile.jpg" alt="Profile Photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                            <i class="fas fa-user" style="display: none;"></i>
-                        </div>
-                    </div>
-                    <div class="about-text">
-                         <p>안녕하세요, 백엔드 개발자 임재현(hyeonZIP) 입니다. 좋아하는 키워드는 <span class="highlight-keyword">확장 가능한 설계</span>, <span class="highlight-keyword">동작하는 클린 코드</span>이며, 이를 지키기 위해 고려 기술 스택과 디자인 패턴, 테스트 코드에 대해 고민합니다. 경계하는 키워드는 <span class="warning-keyword">당연히</span>, <a href="https://workingscorpion.notion.site/18ba87a296d880449599f97af1ca1845" target="_blank" class="warning-keyword-link"><span class="warning-keyword">기술 쇼핑</span><i class="fas fa-external-link-alt"></i></a>입니다. 개발에 있어서는 돈 쓰는 것을 주저하지 않습니다.</p>
-                    </div>
+      <!-- 경험 섹션 -->
+      <section id="experience" class="experience">
+        <div class="container">
+          <h2 class="section-title">Experience</h2>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>LG U+ 유레카 2기</h3>
+                  <span class="company">부트 캠프</span>
+                  <span class="period">25.01.20 - 25.08.12</span>
                 </div>
+                <p>
+                  교육생 인원들과 CS 스터디를 진행하였고, 총 3번의 프로젝트를
+                  진행하면서 백엔드 팀장직을 맡았으며 최우수상을 수상하였습니다.
+                </p>
+                <ul>
+                  <li>백엔드 팀장으로서 2명의 백엔드 개발 팀원 관리</li>
+                  <li>Spring WebSocket을 활용한 채팅 서비스 개발</li>
+                  <li>Spring AI를 활용한 LLM 서비스 개발</li>
+                </ul>
+              </div>
             </div>
-        </section>
-
-        <!-- 경험 섹션 -->
-        <section id="experience" class="experience">
-            <div class="container">
-                <h2 class="section-title">Experience</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <h3>LG U+ 유레카 2기</h3>
-                                <span class="company">부트 캠프</span>
-                                <span class="period">25.01.20 - 25.08.12</span>
-                            </div>
-                            <p>교육생 인원들과 CS 스터디를 진행하였고, 총 3번의 프로젝트를 진행하면서 백엔드 팀장직을 맡았으며 최우수상을 수상하였습니다.</p>
-                            <ul>
-                                <li>백엔드 팀장으로서 2명의 백엔드 개발 팀원 관리</li>
-                                <li>Spring WebSocket을 활용한 채팅 서비스 개발</li>
-                                <li>Spring AI를 활용한 LLM 서비스 개발</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <h3>(주)씨에이치소프트</h3>
-                                <span class="company">현장실습형 인턴</span>
-                                <span class="period">24.06.26 - 24.07.12</span>
-                            </div>
-                            <p>사내 서비스 셀리어스(Sellius)의 링크윈(LinkWeen)의 필터링 기능을 추가하였습니다.</p>
-                            <ul>
-                                <li>Python Selenium을 활용한 웹 크롤링</li>
-                                <li>웹 크롤링 결과를 바탕으로 데이터베이스 설계 및 구현</li>
-                                <li>PHP 기반 웹 프로젝트에 필터링 기능 추가</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <h3>경북 네트워크형 캠퍼스 SW아카데미 4기</h3>
-                                <span class="company">교내 활동</span>
-                                <span class="period">24.01.23 - 24.05.29</span>
-                            </div>
-                            <p>SpringBoot와 React 활용 교육과 팀장으로서 추천 알고리즘을 이용한 친구 매칭 플랫폼 프로젝트를 수행하였습니다.</p>
-                            <ul>
-                                <li>ERD 설계</li>
-                                <li>REST API 개발</li>
-                                <li>협업 필터링기반 추천 알고리즘 개발</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <h3>(주)테이큰소프트</h3>
-                                <span class="company">현장실습형 인턴</span>
-                                <span class="period">23.12.26 - 24.02.16</span>
-                            </div>
-                            <p>사내 프로젝트 BI Manager인 데이터 품질관리 시스템을 개발하였습니다. Sping3와 Vue.js를 활용하였습니다.</p>
-                            <ul>
-                                <li>REST API 개발</li>
-                                <li>Vue.js 기반 프론트엔드 개발</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <h3>(주)엠엔비전</h3>
-                                <span class="company">근로 장학</span>
-                                <span class="period">23.07.03 - 23.08.31</span>
-                            </div>
-                            <p>근로 장학생으로서 사내 업무 보조를 맡았습니다.</p>
-                            <ul>
-                                <li>데이터 라벨링</li>
-                                <li>Unity MediaPipePlugin 개발 환경 구축</li>
-                            </ul>
-                        </div>
-                    </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>(주)씨에이치소프트</h3>
+                  <span class="company">현장실습형 인턴</span>
+                  <span class="period">24.06.26 - 24.07.12</span>
                 </div>
+                <p>
+                  사내 서비스 셀리어스(Sellius)의 링크윈(LinkWeen)의 필터링
+                  기능을 추가하였습니다.
+                </p>
+                <ul>
+                  <li>Python Selenium을 활용한 웹 크롤링</li>
+                  <li>웹 크롤링 결과를 바탕으로 데이터베이스 설계 및 구현</li>
+                  <li>PHP 기반 웹 프로젝트에 필터링 기능 추가</li>
+                </ul>
+              </div>
             </div>
-        </section>
-
-        <!-- 프로젝트 섹션 -->
-        <section id="projects" class="projects">
-            <div class="container">
-                <h2 class="section-title">Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <i class="fas fa-shopping-cart"></i>
-                        </div>
-                             <div class="project-content">
-                             <h3>모바일 데이터 거래 플랫폼</h3>
-                             <div class="project-tech">
-                                 <span class="tech-tag">Spring Boot</span>
-                                 <span class="tech-tag">Spring WebSocket</span>
-                                 <span class="tech-tag">MySQL</span>
-                                 <span class="tech-tag">Redis</span>
-                                 <span class="tech-tag">JPA</span>
-                             </div>
-                             <div class="project-details">
-                                 <div class="project-section">
-                                     <h4><i class="fas fa-info-circle"></i> 프로젝트 내용</h4>
-                                     <p>SpringBoot와 Next.js를 활용한 모바일 데이터 거래 플랫폼입니다. </p>
-                                     <p>사용자들간의 원활한 거래 활동을 위해 상품 리뷰, 신고 API와 WebSocket을 활용한 채팅 기능을 개발하였습니다.</p>
-                                 </div>
-                                 <div class="project-section">
-                                     <h4><i class="fas fa-trophy"></i> 주요 성과</h4>
-                                     <ul>
-                                         <li>리뷰 API 개발</li>
-                                         <li>신고 API 개발</li>
-                                         <li>WebSocket STOMP 기반 채팅 서비스 개발</li>
-                                     </ul>
-                                 </div>
-                                 <div class="project-section">
-                                    <h4><i class="fas fa-chart-line"></i> 결과</h4>
-                                    <p>오토 스케일링에 의해 스케일 아웃이 되더라도 Redis Pub/Sub 기능을 활용하여 채팅 서비스를 유지할 수 있습니다.</p>
-                                    <p>코드 커버리지 80%를 달성한 만큼 자주 변동되는 변경사항에도 유연하게 대처할 수 있었습니다.</p>
-                                </div>
-                             </div>
-                             <div class="project-links">
-                                 <a href="https://github.com/URECA-Dapanda" class="project-link"><i class="fab fa-github"></i> GitHub</a>
-                             </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <i class="fas fa-tasks"></i>
-                        </div>
-                             <div class="project-content">
-                             <h3>LLM 기반 요금제 추천 플랫폼</h3>
-                             <div class="project-tech">
-                                 <span class="tech-tag">Spring Boot</span>
-                                 <span class="tech-tag">Spring AI</span>
-                                 <span class="tech-tag">Neo4J</span>
-                                 <span class="tech-tag">Open AI</span>
-                             </div>
-                             <div class="project-details">
-                                 <div class="project-section">
-                                     <h4><i class="fas fa-info-circle"></i> 프로젝트 내용</h4>
-                                     <p>기존 룰 기반 챗봇에서 자연어 기반으로 요금제를 추천하는 서비스입니다. 챗봇의 금칙어 필터링과 임베딩된 요금제에 대해 유사도 검색 결과를 사용자에게 제공합니다.</p>
-                                 </div>
-                                 <div class="project-section">
-                                     <h4><i class="fas fa-trophy"></i> 주요 성과</h4>
-                                     <ul>
-                                         <li>Neo4J Entity 설계</li>
-                                         <li>Spring AI 기반 ChatClient 설정</li>
-                                         <li>다중 ChatClient에 기반한 AI Agent 구현</li>
-                                         <li>다양한 요청에 유연한 대응을 위한 Tool Calling 구현</li>
-                                         <li>프롬프트 엔지니어링</li>
-                                     </ul>
-                                 </div>
-                                 <div class="project-section">
-                                     <h4><i class="fas fa-chart-line"></i> 결과</h4>
-                                     <p>요금제 이외의 요청이 들어오더라도 기계적인 응답이 아닌 자연스러운 응답과 유사도가 높은 요금제 목록을 반환합니다. </p>
-                                     <p>또한, 그래프 데이터베이스 활용으로 복잡한 추천 쿼리에도 관계형 데이터베이스에 비해 30% 가량 성능 이점을 확보했습니다.</p>
-                                     <p>최종적으로 최우우상을 수상하였습니다.</p>
-                                 </div>
-                             </div>
-                             <div class="project-links">
-                                 <a href="https://github.com/ixi-U/ixi-U-be" class="project-link"><i class="fab fa-github"></i> GitHub</a>
-                             </div>
-                        </div>
-                    </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>경북 네트워크형 캠퍼스 SW아카데미 4기</h3>
+                  <span class="company">교내 활동</span>
+                  <span class="period">24.01.23 - 24.05.29</span>
                 </div>
+                <p>
+                  SpringBoot와 React 활용 교육과 팀장으로서 추천 알고리즘을
+                  이용한 친구 매칭 플랫폼 프로젝트를 수행하였습니다.
+                </p>
+                <ul>
+                  <li>ERD 설계</li>
+                  <li>REST API 개발</li>
+                  <li>협업 필터링기반 추천 알고리즘 개발</li>
+                </ul>
+              </div>
             </div>
-        </section>
-
-        <!-- 자격증 섹션 -->
-        <section id="certificates" class="certificates">
-            <div class="container">
-                <h2 class="section-title">Certificates</h2>
-                <div class="certificates-grid">
-                    <div class="certificate-card">
-                        <div class="certificate-content">
-                            <h3>정보처리기사</h3>
-                            <p>과학기술정보통신부</p>
-                            <span class="certificate-date">2025.06.12</span>
-                        </div>
-                    </div>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>(주)테이큰소프트</h3>
+                  <span class="company">현장실습형 인턴</span>
+                  <span class="period">23.12.26 - 24.02.16</span>
                 </div>
+                <p>
+                  사내 프로젝트 BI Manager인 데이터 품질관리 시스템을
+                  개발하였습니다. Sping3와 Vue.js를 활용하였습니다.
+                </p>
+                <ul>
+                  <li>REST API 개발</li>
+                  <li>Vue.js 기반 프론트엔드 개발</li>
+                </ul>
+              </div>
             </div>
-        </section>
-        <!-- 푸터 -->
-        <footer class="footer">
-            <div class="container">
-                <p>Tech is a tool for solving problems, not a goal</p>
+            <div class="timeline-item">
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>(주)엠엔비전</h3>
+                  <span class="company">근로 장학</span>
+                  <span class="period">23.07.03 - 23.08.31</span>
+                </div>
+                <p>근로 장학생으로서 사내 업무 보조를 맡았습니다.</p>
+                <ul>
+                  <li>데이터 라벨링</li>
+                  <li>Unity MediaPipePlugin 개발 환경 구축</li>
+                </ul>
+              </div>
             </div>
-        </footer>
+          </div>
+        </div>
+      </section>
+
+      <!-- 프로젝트 섹션 -->
+      <section id="projects" class="projects">
+        <div class="container">
+          <h2 class="section-title">Projects</h2>
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-image">
+                <i class="fas fa-shopping-cart"></i>
+              </div>
+              <div class="project-content">
+                <h3>모바일 데이터 거래 플랫폼</h3>
+                <div class="project-tech">
+                  <span class="tech-tag">Spring Boot</span>
+                  <span class="tech-tag">Spring WebSocket</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">Redis</span>
+                  <span class="tech-tag">JPA</span>
+                </div>
+                <div class="project-details">
+                  <div class="project-section">
+                    <h4><i class="fas fa-info-circle"></i> 프로젝트 내용</h4>
+                    <p>
+                      SpringBoot와 Next.js를 활용한 모바일 데이터 거래
+                      플랫폼입니다.
+                    </p>
+                    <p>
+                      사용자들간의 원활한 거래 활동을 위해 상품 리뷰, 신고 API와
+                      WebSocket을 활용한 채팅 기능을 개발하였습니다.
+                    </p>
+                  </div>
+                  <div class="project-section">
+                    <h4><i class="fas fa-trophy"></i> 주요 성과</h4>
+                    <ul>
+                      <li>리뷰 API 개발</li>
+                      <li>신고 API 개발</li>
+                      <li>WebSocket STOMP 기반 채팅 서비스 개발</li>
+                    </ul>
+                  </div>
+                  <div class="project-section">
+                    <h4><i class="fas fa-chart-line"></i> 결과</h4>
+                    <p>
+                      오토 스케일링에 의해 스케일 아웃이 되더라도 Redis Pub/Sub
+                      기능을 활용하여 채팅 서비스를 유지할 수 있습니다.
+                    </p>
+                    <p>
+                      코드 커버리지 80%를 달성한 만큼 자주 변동되는 변경사항에도
+                      유연하게 대처할 수 있었습니다.
+                    </p>
+                  </div>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/URECA-Dapanda"
+                    class="project-link"
+                    ><i class="fab fa-github"></i> GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-image">
+                <i class="fas fa-tasks"></i>
+              </div>
+              <div class="project-content">
+                <h3>LLM 기반 요금제 추천 플랫폼</h3>
+                <div class="project-tech">
+                  <span class="tech-tag">Spring Boot</span>
+                  <span class="tech-tag">Spring AI</span>
+                  <span class="tech-tag">Neo4J</span>
+                  <span class="tech-tag">Open AI</span>
+                </div>
+                <div class="project-details">
+                  <div class="project-section">
+                    <h4><i class="fas fa-info-circle"></i> 프로젝트 내용</h4>
+                    <p>
+                      기존 룰 기반 챗봇에서 자연어 기반으로 요금제를 추천하는
+                      서비스입니다. 챗봇의 금칙어 필터링과 임베딩된 요금제에
+                      대해 유사도 검색 결과를 사용자에게 제공합니다.
+                    </p>
+                  </div>
+                  <div class="project-section">
+                    <h4><i class="fas fa-trophy"></i> 주요 성과</h4>
+                    <ul>
+                      <li>Neo4J Entity 설계</li>
+                      <li>Spring AI 기반 ChatClient 설정</li>
+                      <li>다중 ChatClient에 기반한 AI Agent 구현</li>
+                      <li>
+                        다양한 요청에 유연한 대응을 위한 Tool Calling 구현
+                      </li>
+                      <li>프롬프트 엔지니어링</li>
+                    </ul>
+                  </div>
+                  <div class="project-section">
+                    <h4><i class="fas fa-chart-line"></i> 결과</h4>
+                    <p>
+                      요금제 이외의 요청이 들어오더라도 기계적인 응답이 아닌
+                      자연스러운 응답과 유사도가 높은 요금제 목록을 반환합니다.
+                    </p>
+                    <p>
+                      또한, 그래프 데이터베이스 활용으로 복잡한 추천 쿼리에도
+                      관계형 데이터베이스에 비해 30% 가량 성능 이점을
+                      확보했습니다.
+                    </p>
+                    <p>최종적으로 최우우상을 수상하였습니다.</p>
+                  </div>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/ixi-U/ixi-U-be"
+                    class="project-link"
+                    ><i class="fab fa-github"></i> GitHub</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 자격증 섹션 -->
+      <section id="certificates" class="certificates">
+        <div class="container">
+          <h2 class="section-title">Certificates</h2>
+          <div class="certificates-grid">
+            <div class="certificate-card">
+              <div class="certificate-content">
+                <h3>정보처리기사</h3>
+                <p>과학기술정보통신부</p>
+                <span class="certificate-date">2025.06.12</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 푸터 -->
+      <footer class="footer">
+        <div class="container">
+          <p>Tech is a tool for solving problems, not a goal</p>
+        </div>
+      </footer>
     </main>
 
     <script src="script.js"></script>
-</body>
-</html> 
+  </body>
+</html>
